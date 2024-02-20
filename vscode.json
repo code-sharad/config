@@ -1,0 +1,158 @@
+{
+  "vim.neovimPath": "/usr/local/bin/neovim",
+  "vim.enableNeovim": true,
+  "workbench.settings.applyToAllProfiles": ["workbench.colorTheme"],
+  "settingsSync.ignoredExtensions": [],
+  "editor.fontLigatures": true,
+  "editor.fontVariations": true,
+  "editor.fontFamily": " 'Fira Code iScript', 'Fira Code', 'Courier New', monospace",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          //following will be in italic (=FlottFlott)
+          "comment",
+          "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          "storage.modifier", //static keyword
+          "storage.type", //class keyword
+          "support.class.builtin",
+          "keyword.control",
+          "constant.language",
+          "entity.other.attribute-name",
+          "entity.name.method"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          //following will be excluded from italics (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "editor.fontSize": 16,
+  "editor.fontWeight": "normal",
+  "files.autoSave": "afterDelay",
+  "terminal.integrated.cursorBlinking": true,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.runInTerminal": true,
+  "workbench.iconTheme": "catppuccin-mocha",
+  "terminal.external.windowsExec": "C:/Program Files/Git/bin/bash.exe -i -l",
+  "terminal.integrated.scrollback": 10000,
+  "editor.indentSize": "tabSize",
+  "github.copilot.advanced": {},
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false,
+    "cpp": true,
+    "javascript": false,
+    "typescript": false,
+    "javascriptreact": false
+  },
+  "editor.cursorWidth": 1,
+  //   "workbench.colorCustomizations": {
+  //     "editorCursor.foreground": "#c7b9ff"
+  //     // "terminalCursor.foreground": "#ae8bff"
+  //   },
+  "editor.mouseWheelZoom": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "files.defaultLanguage": "markdown",
+  "editor.lineHeight": 25.6,
+  "terminal.sourceControlRepositoriesKind": "external",
+  "terminal.explorerKind": "external",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "editor.formatOnSave": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "amVim.useSystemClipboard": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.autofetch": true,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "GitHub.copilot",
+  "editor.formatOnPaste": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "editor.scrollbar.horizontalScrollbarSize": 2,
+  // "editor.scrollbar.verticalScrollbarSize": 5,
+  "editor.scrollbar.verticalScrollbarSize": 8,
+
+  // "workbench.colorCustomizations": {
+  //   "editorOverviewRuler.background": "#7f73da"
+  // },
+
+  // Vim
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-c": false,
+    "<C-v>": false
+  },
+
+  // To improve performance
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {},
+  "editor.scrollbar.vertical": "visible",
+  "window.menuBarVisibility": "toggle",
+  "workbench.productIconTheme": "fluent-icons",
+  "editor.stickyScroll.enabled": true,
+  "workbench.list.smoothScrolling": true,
+  "editor.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "window.zoomLevel": 1,
+  "editor.minimap.enabled": true,
+  "workbench.colorTheme": "Catppuccin Mocha"
+}
